@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*apple main-media*/
+
+/*under 1200px*/
+@media only screen and (max-width:1200px) {
+    .divide {
+        background-size: auto 70%;
+        background-position: bottom;
+    }
+    .pd-title {
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+
+    .pd-catch {
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+
+    .pd-button {
+        width: 160px;
+    }
+
+    .pd-more .pd-mainbox {
+        margin-top: 13%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .pd-mainbox {
+        width: 70%;
+    }
+
+    .pd-button {
+        width: 150px;
+    }
+
+    .pd-more .pd-mainbox {
+        margin-top: 15%;
+    }
+
+    .small-title {
+        font-size: 2.4rem;
+    }
+
+    .pd-watch {
+        -webkit-background-size: 70%;
+        background-size: 70%;
+    }
+}
+
+@media only screen and (max-height:820px) {
+    .pd-more .pd-mainbox {
+        margin-top: 10%;
+    }
+    
+    .pd-watch {
+        background-position: top;
+    }
+}
+
+@media only screen and (max-height:530px) {
+    .pd-more .pd-mainbox {
+        margin-top: 7%;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .divide {
+        background-size: auto 45%;
+        background-position: bottom;
+    }
+
+    .pd-mainbox {
+        margin-top: 50%;
+        width: 90%;
+    }
+
+    .pd-title {
+        font-size: 3.7rem;
+    }
+
+    .pd-catch {
+        font-size: 1.5rem;
+    }
+
+    .pd-button {
+        width: 140px;
+    }
+
+    .pd-more .pd-mainbox {
+        margin-top: 25%;
+    }
+
+    .pd-more .pd-title {
+        font-size: 3rem;
+    }
+
+    .small-box {
+        width: 100%;
+    }
+
+    .small-title {
+        font-size: 4rem;
+    }
+
+    .small-button {
+        width: 100px;
+    }
+
+    .pd-watch {
+        -webkit-background-size: 80%;
+        background-size: 80%;
+        background-position: bottom;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .small-title {
+        font-size: 3rem;
+    }
+}

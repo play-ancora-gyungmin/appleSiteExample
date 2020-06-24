@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+.textbox {
+    position: absolute;
+    padding: 1.5%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.textbox.left {left: 0;width: 33.33%;height: 100%;padding-top: 65px;}
+
+.textbox.right {right: 0;width: 33.33%;height: 100%;padding-top: 65px;}
+
+.textbox.bottom {bottom: 0;width: 100%;height: 33.33%;}
+
+.visualbox {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.visualbox.left {left: 0;width: 66.66%;height: 100%;}
+
+.visualbox.right {right: 0;width: 66.66%;height: 100%;}
+
+.visualbox.top {top: 0;width: 100%;height: 66.66%;}
+
+.visualbox .vb-cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.tb-title {
+    padding: 20px 0;
+    width: 100%;
+    float: left;
+}
+
+.bottom .tb-title {
+    width: 20%;
+    padding: 0 2%;
+}
+
+.tb-title h2{
+    font-size: 1.3rem;
+    padding: 1% 0;
+}
+
+.tb-title h3{
+    font-size: 2.3rem;
+    padding: 1% 0;
+}
+
+.tb-title h4{
+    font-size: 3.6rem;
+    padding: 1% 0;
+    padding-bottom: 3%;
+}
+
+.tb-cont{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 .5%;
+    margin: 5% 0;
+}
+
+.tb-cont p {
+    margin: 0 0;
+    color: #8c8c8c;
+}
+
+#pg-front {
+    position: relative;
+}
+
+.front-box {
+    position: relative;
+    top: 11%;
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.front-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+}
+
+.front-catch {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}
+
+.fornt-video {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    display: block;
+}
+
+.front-summ {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+}
+
+.front-summ li {
+    width: calc(100% / 4);
+}
+
+.front-summ h3 {
+    font-size: 2.5rem;
+}
+
+.front-summ span {
+    font-size: 1.4rem;
+}
+
+.pg-buynow {
+    color: #fff;
+    background-color: #000;
+}
+
+.buy-btn {
+    display: block;
+    margin: .2rem auto;
+    width: 100%;
+    height: 40px;
+    background-color: #0071E3;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 20px;
+}

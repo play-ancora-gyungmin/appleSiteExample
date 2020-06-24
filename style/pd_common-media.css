@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*under 1200px*/
+@media only screen and (max-width:1200px) {
+    .fornt-video {
+        width: auto;
+        max-height: 60%
+    }
+    
+    .front-title {
+        font-size: 3.6rem;
+    }
+
+    .front-catch {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .front-box {
+        width: 90%;
+    }
+    .front-summ h3 {
+        font-size: 2rem;
+    }
+
+    .front-summ span {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .textbox.left,
+    .textbox.right {
+        bottom: 0;
+        width: 100%;
+        height: 33.33%;
+        padding-top: 1.5%;
+    }
+
+    .visualbox.left,
+    .visualbox.right {
+        top: 0;
+        width: 100%;
+        height: 66.66%;
+    }
+
+    .tb-title {
+        width: 20%;
+        padding: 0 2%;
+    }
+
+    .tb-title h3 {
+        font-size: 2rem;
+        padding: 1% 0;
+    }
+
+    .tb-title h4 {
+        font-size: 3.2rem;
+        padding: 1% 0;
+        padding-bottom: 3%;
+    }
+
+    .tb-cont {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 0 .5%;
+        margin: 5% 0;
+    }
+
+    .tb-cont p {
+        margin: 0 0;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .front-summ {
+        position: relative;
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    .front-summ li {
+        display: none;
+    }
+    
+    .front-summ li:last-child {
+        display: block;
+        width: 100%;
+    }
+    
+    .textbox.left,
+    .textbox.right,
+    .textbox.bottom{
+        bottom: 0;
+        width: 100%;
+        height: 45%;
+        padding-top: 1.5%;
+    }
+
+    .visualbox.left,
+    .visualbox.right,
+    .visualbox.bottom {
+        top: 0;
+        width: 100%;
+        height: 55%
+    }
+    
+    .tb-title,
+    .bottom .tb-title{
+        padding: 0;
+        width: 100%;
+    }
+
+    .tb-title h3 {
+        font-size: 2rem;
+        padding: 1% 0;
+    }
+
+    .tb-title h4 {
+        font-size: 3rem;
+        padding: 1% 0;
+        padding-bottom: 3%;
+    }
+
+    .tb-cont {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0 .5%;
+        margin: 5% 0;
+    }
+
+    .tb-cont p {
+        margin: 1.4rem 0;
+    }
+}

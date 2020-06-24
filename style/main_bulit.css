@@ -1,0 +1,227 @@
+@charset "utf-8";
+/*main_bulit.css*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+[class^="pd-"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pd-mainbox {
+    margin: 0 auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.pd-title {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+}
+
+.pd-catch {
+	white-space: nowrap;
+    font-size: 2rem;
+}
+
+.pd-button {
+    display: block;
+    margin: 3rem auto;
+    width: 180px;
+    height: 36px;
+    background-color: #0071E3;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 3.6rem;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.pd-new {
+    color: darkorange;
+    font-size: 1.4rem
+}
+
+.pd-new.no {
+    opacity: 0;
+}
+
+/*pd ipad*/
+.pd-ipad {
+    background-image: url(../resorces/main/ipad_pro_main.jpg);
+    background-color: #fafafa;
+}
+
+#pd-ipad {
+    text-align: center;
+}
+
+/*pd macbook*/
+.pd-macbook {
+    background-image: url(../resorces/main/macbook_air_main.png);
+    background-color: #fafafa;
+}
+
+/*pd ipone*/
+.pd-iphone {
+    position: relative;
+    overflow: hidden;
+}
+
+.pd-iphone-slide {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 300%;
+}
+
+.pd-iphone-slide li {
+    width: calc( 100% / 3 );
+    float: left;
+}
+
+.pd-iphonese {
+    background-image: url(../resorces/main/iphonese_main.png);
+    background-color: #131313;
+}
+
+.pd-iphone11pro {
+    background-image: url(../resorces/main/iphone_pro_main.jpg);
+    background-color: #000;
+}
+
+.pd-iphone11 {
+    background-image: url(../resorces/main/iphone11_main.jpg);
+    background-color: #fafafa;
+}
+
+.pd-iphonese .pd-title,
+.pd-iphonese .pd-catch, 
+.pd-iphone11pro .pd-title,
+.pd-iphone11pro .pd-catch {
+    color: #fff;
+}
+
+.arow-btns {
+    height: auto;
+    top: 50%;
+}
+
+.pointer-btn {
+    position: absolute;
+    width: 8px;
+    height: 17px;
+    background-image: url(../resorces/main/button_pointer.png);
+    background-repeat: no-repeat;
+}
+
+.pointer-btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.right-btn {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: -9px 0;
+}
+
+.left-btn {
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: 0px 0;
+}
+
+.pointer-btn.non {
+    display: none;
+}
+
+/*pd more*/
+.pd-more {
+    background-color: #FAFAFA;
+}
+
+.pd-more .pd-mainbox {
+    margin-top: 7%;
+}
+
+.more-wrap {
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 83.33%;
+    height: 66.66%;
+}
+
+.more-box {
+    width: 48%;
+    height: 48%;
+    margin: 1%;
+    float: left;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+}
+
+.small-box {
+    margin: 10% auto;
+    width: 33.33%;
+    text-align: center;
+}
+
+.small-title {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.small-title img {
+    width: 100%;
+}
+
+.small-button {
+    display: block;
+    margin: .2rem auto;
+    width: 80px;
+    height: 18px;
+    background-color: #0071E3;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.pd-watch {
+    background-image: url(../resorces/main/watch_main.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom;
+}
+
+.pd-airpods {
+    background-image: url(../resorces/main/airpods_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pd-arcade {
+    background-image: url(../resorces/main/arcade_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pd-music {
+    background-image: url(../resorces/main/music_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

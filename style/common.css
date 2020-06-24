@@ -1,0 +1,252 @@
+@charset "utf-8";
+/*common.css*/
+
+/*[class^="box-"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    outline: 1px dotted red;
+}*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.divide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contain {
+    position: relative;
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.double {
+    width: 16.66%;
+}
+
+.quarter {
+    width: 25%
+}
+
+.middle {
+    width: 33.33%
+}
+
+.half {
+    width: 50%;
+}
+
+.gnb {
+    position: fixed;
+    z-index: 999;
+    height: 44px;
+    background-color: hsla(0, 0%, 5%, 0.8);
+    border: none;
+}
+
+#gnb {
+    height: 100%;
+}
+
+#gnb > div {
+    height: 100%;
+}
+
+#gnb a {
+    color: #FFF;
+    font-size: 1.6rem;
+    line-height: 44px;
+    text-align: center;
+    opacity: .8;
+}
+
+#gnb a:hover {
+    opacity: 1;
+}
+
+.gnb-apple {
+    position: absolute;
+    left: 0;
+    /*50%;*/
+    /*transform: translateX(-50%);*/
+    float: left;
+    width: 16px;
+    padding: 0 10px;
+}
+
+.gnb-menu {
+    position: absolute;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    /*display: none;*/
+}
+
+.gnb-menu li {
+    margin: 0 10px;
+}
+
+.gnb-icons {
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+}
+
+.gnb-icons li {
+    width: 17px;
+    margin: 0 10px;
+}
+
+.gnb-icons li:first-child {
+    width: auto;
+}
+
+/*bic-menu*/
+.big-menu {
+    background-color: hsla(0, 0%, 0%, 0.9);
+    position: fixed;
+    z-index: 999;
+    text-align: center;
+    display: none;
+    white-space: nowrap;
+}
+
+.big-menu a{
+    color: #fff;
+}
+
+.menu-nav {
+    height: 44px;
+}
+
+.menu-nav > div {
+    height: 100%;
+}
+
+.gnb-icon-menu {
+    position: absolute;
+    right: 0;
+    padding: 0 20px;
+}
+
+.menu-list {
+    padding-top: 20%;
+}
+
+.manu-section {
+    width: calc( 100% / 6 );
+}
+
+.section-title > a {
+    font-size: 3rem;
+}
+
+.section-menu > li {
+    float: none;
+    padding: 5%;
+}
+
+.section-menu a {
+    font-size: 1.7rem;
+    opacity: .8;
+}
+
+.section-menu a:hover {
+    opacity: 1;
+}
+/*bic-menu*/
+
+.info {
+    background-color: #f0f0f0;
+    height: 119px;
+}
+
+#info {
+    position: relative;
+    /*background-color: #f0f0f0;*/
+    text-align: center;
+}
+
+#info > address {
+    /*position: absolute;*/
+    /*top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    bottom: 0;*/
+    margin: 25px auto;
+    color: #404040;
+    text-align: center;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#info > address a {
+    color: dodgerblue;
+}
+
+.side-bulit {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-600px, -50%);
+    z-index: 99;
+}
+
+.side-bulit li {
+    float: none;
+    background-color: #777777;
+    width: 4px;
+    height: 32px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.side-bulit li.selected {
+    background-color: #333333;
+    width: 6px;
+}
+
+.side-bulit li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bulit li a span {
+    display: none;
+}
+
+.side-bulit li:hover {
+    background-color: #333333;
+    width: 6px;
+}
+
+.side-bulit li:hover a {
+    padding-left: 10px;
+    width: 100px;
+}
+
+.side-bulit li:hover a span {
+    display: block;
+    line-height: 32px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(pd_common.css);
+
+/*pg-fornt-big*/
+.pg-front-big {
+    background-color: #f2f2f2;
+    background-image: url(../resorces/intro_iphone11/camera_hero_endframe_large_2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*pg-camera*/
+#pg-camera .vb-cont {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+#pg-camera .vb-cont.on {
+    opacity: 1;
+}
+
+/*dual camera*/
+#pg-camera .vb-dualcam img {
+    position: absolute;
+    bottom: 0;
+    max-width: 97%;
+    max-height: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .6;
+}
+
+#pg-camera .vb-dualcam ul {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    z-index: 1;
+}
+
+#pg-camera .vb-dualcam li {
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+#pg-camera .vb-dualcam li>h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+#pg-camera .vb-dualcam li>p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8c8c8c;
+}
+
+/*night*/
+#pg-camera .vb-night ul {
+    width: 85%;
+    /*width: 50%;*/
+    margin: 0 auto;
+    margin-top: 25%;
+    /*margin-top: 10%;*/
+}
+
+#pg-camera .vb-night li {
+    width: 48%;
+    margin: 1%;
+}
+
+#pg-camera .vb-night img {
+    width: 100%;
+}
+
+#pg-camera .vb-night p {
+    font-size: 1.4rem;
+    max-width: 85%;
+    margin: 2% auto;
+}
+
+/*pg-chip*/
+#pg-chips,
+.vb-chip{
+    overflow: hidden;
+}
+
+.chip {
+    position: absolute;
+    transform: translateY(300%);
+    opacity: 0;
+}
+
+.vb-chip.now .chip {
+    animation: chip-now .8s ease-in-out forwards;
+}
+
+@keyframes chip-now {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.chip.horiz {
+    width: 30%; /*160px*/
+}
+
+.chip.vert {
+    width: 16%;
+}
+
+#chip1 {
+    left: 25%;
+    top: 18%;
+}
+
+#chip2 {
+    left: 8%;
+    top: 23%;
+}
+
+#chip3 {
+    left: 25%;
+    top: 50%;
+}
+
+#chip4 {
+    left: 42%;
+    top: 55%;
+}
+
+#chip5 {
+    left: 75%;
+    top: 50%;
+}
+
+#chip6 {
+    left: 58%;
+    top: 18%;
+}
+
+/*pg-ios*/
+.pg-ios .visualbox {
+    background-color: #000;
+}
+
+#pg-ios .vb-ios {
+    position: relative;
+    height: auto;
+}
+
+.vb-ios::before {
+    content: "";
+    display: block;
+    margin-top: 12%;
+    padding-top: 100%;
+}
+
+.vb-ios .ios{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+.vb-ios .ios-t{
+    transform: translate(-50%,-300%);
+}
+
+.vb-ios .ios-b{
+    transform: translate(-50%,200%);
+}
+
+.vb-ios .ios-l{
+    transform: translate(-300%,-50%);
+}
+
+.vb-ios .ios-r{
+    transform: translate(150%,-50%);
+}
+
+.vb-ios.now .ios {
+    animation: ios-now 1s ease-in-out forwards;
+}
+
+@keyframes ios-now {
+    to {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
+
+
+.ios.vert {
+    width: 13%;
+    height: 26%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover, 86% 93.7%;
+}
+
+#ios-vert-intro {
+    left: 50%;
+    top: 50%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_intro_screen_large.jpg);
+}
+
+#ios-vert1 {
+    left: 19%;
+    top: 24%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_1_large_2x.jpg);
+}
+
+#ios-vert2 {
+    left: 35%;
+    top: 24%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_2_large_2x.jpg);
+}
+
+#ios-vert3 {
+    left: 34%;
+    top: 50%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_3_large_2x.jpg);
+}
+
+#ios-vert4 {
+    left: 66%;
+    top: 50%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_4_large_2x.jpg);
+}
+
+#ios-vert5 {
+    left: 65%;
+    top: 76%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_5_large_2x.jpg);
+}
+
+#ios-vert6 {
+    left: 81%;
+    top: 76%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_6_large_2x.jpg);
+}
+
+#ios-vert8 {
+    left: 3%;
+    top: 64%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_8_large_2x.jpg);
+}
+
+#ios-vert9 {
+    left: 19%;
+    top: 64%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_9_large_2x.jpg);
+}
+
+#ios-vert10 {
+    left: 82%;
+    top: 36%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_10_large_2x.jpg);
+}
+
+#ios-vert11 {
+    left: 98%;
+    top: 36%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_11_large_2x.jpg);
+}
+
+#ios-vert12 {
+    left: 51%;
+    top: 10%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_12_large_2x.jpg);
+}
+
+#ios-vert13 {
+    left: 67%;
+    top: 10%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_13_large_2x.jpg);
+}
+
+#ios-vert14 {
+    left: 49%;
+    top: 90%;
+    background-image: url(../resorces/intro_iphone11/hero_vert_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_vert_dark_screen_14_large_2x.jpg);
+}
+
+.ios.horiz {
+    width: 26%;
+    height: 13%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover, 95% 88%;
+}
+/*
+    left: +-16%
+    height: +-26%
+    horize set % position (vert standard)
+    l +-6%
+    h +-6%
+*/
+
+#ios-horiz1 {
+    left: 58%;
+    top: 30%;
+    background-image: url(../resorces/intro_iphone11/hero_horizontal_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_horizontal_dark_screen_1_large_2x.jpg)
+}
+
+#ios-horiz2 {
+    left: 42%;
+    top: 70%;
+    background-image: url(../resorces/intro_iphone11/hero_horizontal_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_horizontal_dark_screen_2_large_2x.jpg)
+}
+
+#ios-horiz3 {
+    left: 11%;
+    top: 44%;
+    background-image: url(../resorces/intro_iphone11/hero_horizontal_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_horizontal_dark_screen_3_large_2x.jpg)
+}
+
+#ios-horiz4 {
+    left: 89%;
+    top: 56%;
+    background-image: url(../resorces/intro_iphone11/hero_horizontal_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_horizontal_dark_screen_4_large_2x.jpg)
+}
+
+#ios-horiz5 {
+    left: 26%;
+    top: 84%;
+    background-image: url(../resorces/intro_iphone11/hero_horizontal_dark_frame_large_2x.png), url(../resorces/intro_iphone11/hero_horizontal_dark_screen_5_large_2x.jpg)
+}
+/*more*/
+.tile-box {
+    padding-top: 70px;
+    padding-left: 2%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.more-title {
+    font-size: 3.6rem;
+    padding-bottom: 2%;
+}
+
+.more-tile {
+    padding: 5%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.more-tile p {
+    color: #8c8c8c;
+}
+
+.more-icon {
+    height: 37px;
+}
+
+.more-icon-w {
+    width: 37px;
+    height: auto;
+}
+
+#pg-buynow .buy-img{
+    display: block;
+    float: left;
+    margin: 15%;
+}
+
+#pg-buynow .buy-box{
+    float: left;
+    text-align: center;
+    margin: 35% 0;
+}
+
+#pg-buynow .buy-title{
+    font-size: 4rem;
+}
+
+.part-1,
+.part-2,
+.part-3{
+    float: left;
+    height: 80%;
+}
+
+.part-1 .more-tile{
+    height: 25%;
+}
+.part-2 .more-tile{
+    height: 50%;
+}
+.part-3 .more-tile{
+    height: 33.33%;
+}
